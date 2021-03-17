@@ -20,6 +20,11 @@ body {
     
 }
 
+.imgCup {
+    height:250px; 
+    width: 250px;
+}
+
 .backgroundOBP {
     height: 800px;
     background: url(/Images/BackGround/Background2.webp);
@@ -75,8 +80,6 @@ body {
     justify-content: space-between;
     width: 100%;
     padding-top: 10px;
-
-    
 }
 
 .shopIt {
@@ -99,3 +102,15 @@ body {
     color: #EEA19F;
 }
 
+@media screen and (max-width: 900px) {
+    body {
+        max-width: 900px;
+    }
+    .imgCup {
+        height: 100px; 
+        width: 100px;
+    }
+    .titleOBP {
+        font-size: 60px;
+    }
+}
