@@ -3,10 +3,14 @@ const sidebar = document.getElementById("side-bar");
 const menu = document.getElementById("menu");
 
 
-togglebutton.addEventListener("click", show);
+togglebutton.addEventListener("click", function(){
+    sidebar.classList.toggle("active");
+    show();
+});
 
 function show() {        
-    sidebar.classList.toggle("active");
+
+
     if(menu.style.display != "none" ){
         menu.style.display = "none";
     } else {
@@ -14,5 +18,6 @@ function show() {
     };
 }
 
-
-
+if(screen.width < 900){
+window.onload = show
+}

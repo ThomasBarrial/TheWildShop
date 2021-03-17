@@ -1,14 +1,20 @@
 body {
-    min-height: 200vh;
+    height: 100%;
+    width: 100%;
+   
 }
 
 #navbarSearch {
+    max-width: 100%;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 #navbar {
+    max-height: 100%;
+    max-width: 100%;
     min-width: 60vh;
     display: flex;
     justify-content: space-between;
@@ -18,7 +24,7 @@ body {
     margin-right: 1.5rem;
     border: 0.1rem solid white;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px black; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
     position: fixed;
 }
 
@@ -35,6 +41,20 @@ body {
     background: #EEA19F;
 }
 
+#sideBarMenu {
+    display: flex;
+}
+
+#logo {
+    height: 60px;
+    width: 80px;
+    margin-right: 1rem;
+}
+
+#toggle-button {
+    margin-left: 3rem;
+}
+
 .toggle-button span {
     width: 50px;
     height: 5px;
@@ -44,37 +64,6 @@ body {
     margin: 4px;
     transition: 0.5s ease;
 }
-
-nav ul {
-    display: none;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-left: 0px;
-    width: 200%;
-}
-
-nav ul li {
-    border-bottom: 0.1rem solid #EEA19F;
-    list-style: none;
-    cursor: pointer;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #EEA19F;
-}
-
-nav ul li:hover {
-    background: #EEA19F;
-}
-
-nav ul li:hover a {
-    color: white;
-}
-
 
 .side-bar.active span {
     position: sticky;
@@ -91,4 +80,136 @@ nav ul li:hover a {
 
 .side-bar.active span:nth-child(3) {
     transform: translate(0px, -10px) rotate(-45deg);
+}
+
+#menu {
+    display: none;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 0px;
+    width: 200%;
+}
+
+#menu li {
+    border-bottom: 0.1rem solid #EEA19F;
+    list-style: none;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #EEA19F;
+}
+
+#menu li:hover {
+    background: #EEA19F;
+}
+
+#menu li:hover a {
+    color: white;
+}
+
+
+@media screen and (min-width: 960px) {
+
+    body {
+        display: flex;
+        justify-content: center;       
+    }
+
+    #navbarSearch {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: 0.1rem solid white;
+        border-radius: 100px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+        position: fixed;
+        width: 1280px;
+        height: 100px;
+
+    }
+
+    #navbar {
+        width: 1280px;
+        height: 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: none;
+        margin: 0rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0.25rem;
+        margin-right: 0rem;
+        border: 0rem solid white;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px white; 
+        position: absolute;
+    }
+
+    #search {
+        width: 1280px;
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 0rem;
+        position: absolute;
+    }
+
+    #sideBarMenu {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .toggle-button span {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+
+    #logo {
+        height: 120px;
+        width: 120px;
+        margin-right: 0rem;
+    }
+    
+    #menu {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        margin: 0px;
+        padding: 0rem;
+        width: 100%;
+    }
+
+    #menu li {
+        border-bottom: 0rem solid #EEA19F;
+        padding-left: 10px;
+    }
+
+    #menu li:hover {
+        background: none;
+    }
+
+    #menu li a {
+        text-decoration: none;
+        color: #EEA19F;
+        padding: 2rem;
+    }
+
+    #menu li:hover a {
+        color: #EEA19F;
+        border-bottom: 0.1rem solid #EEA19F;
+        padding-bottom: 0.5rem;
+    }
+
+    #cart {
+        display: none;
+    }
 }
