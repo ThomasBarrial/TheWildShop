@@ -106,6 +106,9 @@ body {
     body {
         max-width: 900px;
     }
+    .allVignettes {
+        flex-direction: column;
+    }
     .imgCup {
         height: 100px; 
         width: 100px;
