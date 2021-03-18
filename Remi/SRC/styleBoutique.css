@@ -21,26 +21,26 @@ body {
 }
 
 .imgCup {
-    height:250px; 
-    width: 250px;
+    height:15.625rem; 
+    width: 15.625rem;
 }
 
 .backgroundOBP {
-    height: 800px;
+    height: 50rem;
     background: url(/Images/BackGround/Background2.webp);
     background-position: cover;
 }
 
 .titleOBP h1 {
-    font-size: 80px;
+    font-size: 5rem;
     color: #EEA19F;
     font-family: 'Varela Round', sans-serif;
 }
 
 
 .vignette {
-    width: 45vh;
-    height: 45vh;
+    width: 20vw;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,10 +49,14 @@ body {
     border-radius: 40px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.65);
     background-color: #fff;
-    margin: 10px 10px;
-    padding: 10px 30px;
+    margin: 0.625rem 0.625rem;
+    padding: 0.625rem 1.875rem;
     color: #EEA19F;
-    padding-bottom: 160px;   
+    padding-bottom: 10px;   
+}
+
+.vignette .imgCup {
+    padding-top: 0%;
 }
 
 .vignette h2 {
@@ -61,12 +65,14 @@ body {
     justify-content: flex-start;
     font-size: 30px;
     font-family: 'Varela Round', sans-serif;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
 }
 
 .vignette p {
     display: flex;
-    font-size: 20px;
-    margin: 5px;
+    font-size: 1rem;
+    margin: 0.3125rem;
     padding: 0;
 }
 
@@ -80,14 +86,17 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
 }
 
 .shopIt {
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.397);
     border-radius: 20px;
     background-color: #EEA19F;
     text-align: center;
-    padding: 0px 50px; 
+    padding: 0px 3.125rem; 
 }
 
 .shopIt a {
@@ -104,25 +113,25 @@ body {
 
 #side-bar {
     position: absolute;
-    width: 310px;
+    width: 19.375rem;
     height: 100%;
     background: #fff;
     left: -340px;
     transition: 0.5s ease-out;
     z-index: 4;
-    margin: 50px 0 30px 5px;
+    margin: 3.125rem 0 1.875rem 0.3125rem;
     border: 0.5px solid #eea29f75;
     border-radius: 40px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.246);
     font-family: 'Varela Round', sans-serif;
     color: #EEA19F;
-    padding-bottom: 200px;
+    padding-bottom: 12.5rem;
   }
   
   .toggle-button {
     position: absolute;
-    top: 30px;
-    left: 355px;
+    top: 1.875rem;
+    left: 22.1875rem;
     cursor: pointer;
     height: 30px;
     width: 30px;
@@ -146,7 +155,7 @@ body {
     border-radius: 5px;
     background:#EEA19F;
     display: block;
-    margin: 4px;
+    margin: 0.25rem;
     transition: 0.5s ease;
   }
   
@@ -158,7 +167,7 @@ body {
   }
   #side-bar.active .toggle-button {
     top: 2.8rem;
-    left: 320px;
+    left: 20rem;
   }
   
   #side-bar.active span {
@@ -178,6 +187,7 @@ body {
   }
   
   #side-bar.active ~ .content {
+      transition: 0.5s;
     opacity: 0.3;
   }
 
@@ -185,8 +195,8 @@ body {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      margin-top: 20px;
-      margin-left: 20px;
+      margin-top: 1.25rem;
+      margin-left: 1.25rem;
   }
 
 
@@ -195,10 +205,138 @@ body {
 
   }
 
-  #side-bar h2 {
+  .titleSide {
       text-align: center;
   }
+  .commentaires {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2%;
+   
+}
 
+.commentaires p {
+    padding: 0;
+    margin: 0;
+}
+
+.comSide {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding-left: 1.25rem;
+    text-align: start;
+    
+}
+
+.etoileCom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 0.625rem;
+}
+
+.pPCom {
+    height: 3.125rem;
+    width: 3.125rem;
+    margin-left: 0.625rem;
+    margin-right: 1.25rem;
+}
+.vignettePromo {
+    max-width: 100%;
+    width: 70%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    border: 4px solid #EEA19F;
+    border-radius: 40px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.233);
+    background-color: #fff;
+    margin: 0.625rem 1.625rem;
+    padding: 0.3125rem .875rem;
+    color: #EEA19F;
+    }
+
+    .vignettePromo h2 {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        font-size: 20px;
+        font-family: 'Varela Round', sans-serif;
+    }
+    
+    .vignettePromo p {
+        display: flex;
+        font-size: 15px;
+        margin: 0.125rem;
+        padding: 0;
+    }
+    
+    .vigettePromo .prix {
+        font-size: 20px;
+        font-weight: 1000;
+    }
+    
+    .vigettePromo .bottomV {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 0.625rem;
+    }
+    
+    .vignettePromo .shopIt {
+        border-radius: 20px;
+        background-color: #EEA19F;
+        text-align: center;
+        padding: 0px 0.1875rem;
+        
+    }
+    
+    .vigettePromo.shopIt a {
+        text-decoration: none;
+        color: #fff;
+    }
+        
+    .vigettePromo .etoileV {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        color: #EEA19F;
+    }
+    .shopItSide {
+        border: none;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.247);
+        border-radius: 20px;
+        background-color: #EEA19F;
+        text-align: center;
+        padding: 0px 0.9375rem;
+        font-size: 15px;
+     
+    }
+
+    .shopItSide a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .vigettePromo.shopIt a {
+        text-decoration: none;
+        color: #fff;
+    }
+        
+    .vigettePromo .etoileV {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        color: #EEA19F;
+    }
+
+    #side-bar h3 {
+        margin: 1.25rem;
+        margin-top: 1.875rem;
+        margin-bottom: 1.875rem;
+    }
 
 
 @media screen and (max-width: 900px) {
@@ -207,8 +345,8 @@ body {
         align-items: center;
     }
     .imgCup {
-        height: 150px; 
-        width: 150px;
+        height: 9.375rem; 
+        width: 9.375rem;
     }
     
     .titleOBP h1 {
@@ -223,10 +361,10 @@ body {
         border: 3px solid #EEA19F;
         border-radius: 40px;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.65);
-        margin: 10px 7px;
-        padding: 0px 50px;
+        margin: 0.625rem 0.4375rem;
+        padding: 0px 3.125rem;
         color: #EEA19F;
-        padding-bottom: 50px;  
+        padding-bottom: 3.125rem;  
     }
     .vignette h2 {
         display: flex;
@@ -239,7 +377,7 @@ body {
     
     .vignette p {
         font-size: 15px;
-        margin: 5px;
+        margin: 0.3125rem;
         padding: 0;
     }
     
@@ -250,30 +388,35 @@ body {
     
     
     .shopIt {
+        border: none;
         border-radius: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.247);
         background-color: #EEA19F;
         text-align: center;
-        padding: 0px 20px;
+        padding: 0px 1.25rem;
         font-size: 15px; 
     }
 
     .shopItSide {
+        border: none;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.247);
         border-radius: 20px;
         background-color: #EEA19F;
         text-align: center;
-        padding: 0px 15px;
+        padding: 0px 0.9375rem;
         font-size: 15px;
      
     }
 
-    .shopItSide a{
+    .shopItSide a {
         text-decoration: none;
         color: #fff;
     }
+
     .vignettePromo {
         max-width: 100%;
         width: 50vw;
-        height: 40vh;
+        height: 40%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -282,8 +425,8 @@ body {
         border-radius: 40px;
         box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.233);
         background-color: #fff;
-        margin: 10px 26px;
-        padding: 5px 30px;
+        margin: 0.625rem 1.625rem;
+        padding: 0.3125rem 1.875rem;
         color: #EEA19F;
           
     }
@@ -299,7 +442,7 @@ body {
     .vignettePromo p {
         display: flex;
         font-size: 15px;
-        margin: 2px;
+        margin: 0.125rem;
         padding: 0;
     }
     
@@ -313,14 +456,14 @@ body {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        padding-top: 10px;
+        padding-top: 0.625rem;
     }
     
     .vignettePromo .shopIt {
         border-radius: 20px;
         background-color: #EEA19F;
         text-align: center;
-        padding: 0px 3px;
+        padding: 0px 0.1875rem;
         
     }
     
@@ -337,15 +480,16 @@ body {
     }
 
     #side-bar h3 {
-        margin: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin: 1.25rem;
+        margin-top: 1.875rem;
+        margin-bottom: 1.875rem;
     }
 
     .commentaires {
         display: flex;
         justify-content: space-between;
-        margin: 15px 15px auto;
+        margin: 0 2%;
+       
     }
 
     .commentaires p {
@@ -355,92 +499,27 @@ body {
 
     .comSide {
         font-family: 'Raleway', sans-serif;
-        font-size: 20px;
+        font-size: 15px;
+        padding-left: 1.25rem;
+        text-align: start;
+        
     }
 
     .etoileCom {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        margin: 0;
+        margin-right: 0.625rem;
     }
 
     .pPCom {
-        height: 50px;
-        width: 50px;
+        height: 3.125rem;
+        width: 3.125rem;
+        margin-left: 0.625rem;
+        margin-right: 1.25rem;
     }
+ 
 }
 
 
 
-@media screen and (min-width: 900px) {
-    .toggle-button {
-        left: 430px;
-}
-.vignettePromo {
-    max-width: 100%;
-    width: 13vw;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-    border: 4px solid #EEA19F;
-    border-radius: 40px;
-    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.233);
-    background-color: #fff;
-    margin: 10px 17px;
-    padding: 5px 30px;
-    color: #EEA19F;
-}
-#side-bar h3 {
-    margin: 20px;
-}
-.vignettePromo h2 {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 20px;
-    font-family: 'Varela Round', sans-serif;
-}
-
-.vignettePromo p {
-    display: flex;
-    font-size: 15px;
-    margin: 2px;
-    padding: 0;
-}
-
-.vigettePromo .prix {
-    font-size: 20px;
-    font-weight: 1000;
-}
-
-.vigettePromo .bottomV {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 10px;
-}
-
-.vignettePromo .shopIt {
-    border-radius: 20px;
-    background-color: #EEA19F;
-    text-align: center;
-    padding: 0px 3px;
-    
-}
-
-.vigettePromo.shopIt a {
-    text-decoration: none;
-    color: #fff;
-}
-    
-.vigettePromo .etoileV {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    color: #EEA19F;
-}
-}
