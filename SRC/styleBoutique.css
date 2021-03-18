@@ -39,8 +39,8 @@ body {
 
 
 .vignette {
-    width: 45vh;
-    height: 45vh;
+    width: 20vw;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,17 +55,23 @@ body {
     padding-bottom: 10px;   
 }
 
+.vignette .imgCup {
+    padding-top: 0%;
+}
+
 .vignette h2 {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     font-size: 30px;
     font-family: 'Varela Round', sans-serif;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
 }
 
 .vignette p {
     display: flex;
-    font-size: 20px;
+    font-size: 1rem;
     margin: 0.3125rem;
     padding: 0;
 }
@@ -81,9 +87,12 @@ body {
     justify-content: space-between;
     width: 100%;
     padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
 }
 
 .shopIt {
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.397);
     border-radius: 20px;
     background-color: #EEA19F;
     text-align: center;
@@ -178,6 +187,7 @@ body {
   }
   
   #side-bar.active ~ .content {
+      transition: 0.5s;
     opacity: 0.3;
   }
 
@@ -198,6 +208,39 @@ body {
   #side-bar h2 {
       text-align: center;
   }
+  .commentaires {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2%;
+   
+}
+
+.commentaires p {
+    padding: 0;
+    margin: 0;
+}
+
+.comSide {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding-left: 1.25rem;
+    text-align: start;
+    
+}
+
+.etoileCom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 0.625rem;
+}
+
+.pPCom {
+    height: 3.125rem;
+    width: 3.125rem;
+    margin-left: 0.625rem;
+    margin-right: 1.25rem;
+}
 
 
 
@@ -250,7 +293,9 @@ body {
     
     
     .shopIt {
+        border: none;
         border-radius: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.247);
         background-color: #EEA19F;
         text-align: center;
         padding: 0px 1.25rem;
@@ -258,6 +303,8 @@ body {
     }
 
     .shopItSide {
+        border: none;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.247);
         border-radius: 20px;
         background-color: #EEA19F;
         text-align: center;
@@ -266,10 +313,11 @@ body {
      
     }
 
-    .shopItSide a{
+    .shopItSide a {
         text-decoration: none;
         color: #fff;
     }
+
     .vignettePromo {
         max-width: 100%;
         width: 50vw;
@@ -449,5 +497,22 @@ body {
     margin: 0;
     padding: 0;
     color: #EEA19F;
+}
+.shopItSide {
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.397);
+    border-radius: 20px;
+    background-color: #EEA19F;
+    text-align: center;
+    padding: 0 1rem; 
+}
+.shopItSide a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+.prix {
+    font-size: 25px;
+    font-weight: 1000;
 }
 }
