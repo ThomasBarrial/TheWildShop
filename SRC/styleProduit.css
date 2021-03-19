@@ -2,7 +2,9 @@ body {
     padding: 0;
     margin: 0;
     max-width: 100%;
-    background-color: #EEA19F;
+    height: 800px;
+    background-image: url(/BackGroundBoutique2.webp);
+    background-position: cover;
 }
 
 .commentaires {
@@ -15,11 +17,11 @@ body {
     border-radius: 40px;
     padding: 2% 2%;
     font-weight: bolder;
-    border-bottom: 1px solid black;
+    height: 60px;
 }
 
 .etoileC {
-    font-size: 40px;
+    font-size: 15px;
 }
 
 .com h3 {
@@ -32,6 +34,7 @@ body {
 .commentaires p {
     padding: 0;
     margin: 0;
+    font-size: 15px;
     
 }
 
@@ -52,8 +55,8 @@ body {
 }
 
 .pPCom {
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
     margin-left: 0.625rem;
     margin-right: 1.25rem;
 }
@@ -70,13 +73,15 @@ body {
     font-size: 25px;
     font-weight: bolder;
     margin-left: 2%;
+    color: #EEA19F;
 }
 
 .topForm {
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
-    margin: 3% 3% 5% 2%
+    margin: 3% 3% 3% 2%;
+    align-items: center;
     
 }
 
@@ -91,18 +96,18 @@ body {
     border: none;
     border-radius: 30px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.295);
-    color: #EEA19F
+    color: #EEA19F;
 }
 
 
 .form input {
-    width: 60%;
+    width: 50%;
     border: none;
     border-radius: 40px;
     outline: none;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.295);
-    color: #EEA19F;
-    
+    color: #a56f6d;
+    height: 50px;
 }
 
 #name {
@@ -120,4 +125,81 @@ body {
     color: #EEA19F;
 }
 
-.form label
+.etoileV {
+    font-size: 25px;
+    -webkit-text-stroke: 1.2px #eea29f8e;
+    text-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.281);
+}
+
+@media screen and (min-width: 900px){
+    .formCom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        margin-top: 4%;
+    }
+    .form {
+        width: 50%;
+        margin-top: 5%;
+    }
+    
+    .barre {
+        border: 1px solid rgba(226, 141, 141, 0.514);
+        height: 50vh;
+        margin-top: 7%;
+    }
+    .etoileV {
+        font-size: 40px;
+        -webkit-text-stroke: 1px #EEA19F;
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.281);
+        cursor: pointer;
+    }
+
+    .form input {
+        font-size: 20px;
+        height: 70px;
+    }
+
+
+     .form textarea {
+         font-size: 20px;
+     }
+
+     .submit {
+         font-size: 20px;
+         border-radius: 40px;
+         padding: 2% 8%;
+     }
+
+     .commentaires {
+         border-radius: 60px;
+         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.308);
+     }
+
+     #name {
+         margin-bottom: 1%;
+         width: 55%;
+     }
+     #comment {
+         border-radius: 50px;
+     }
+
+     .topForm {
+         margin-bottom: 1%;
+     }
+     .form label {
+         color: #fff;
+     }
+     #lName {
+         color:  #EEA19F;
+     }
+     .lComment {
+         color: #fff;
+     }
+    .com h3 {
+        color: #EEA19F;
+    }
+}
+
