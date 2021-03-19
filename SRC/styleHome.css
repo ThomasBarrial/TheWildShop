@@ -136,13 +136,11 @@ body{
     background: white;
 }
 
-
-
-/*--End Navbar--*/
+#iconCart {
+    display: none;
+}
 
 @media screen and (min-width: 450px){
-
-    /*--Navbar--*/
 
     #navbar {
         margin: 10px auto;
@@ -223,6 +221,10 @@ body{
         color: #EEA19F;
     }    
 
+    #cart {
+        display: none;
+    }
+
     #inputSearch {
         background-color: #EEA19F;
         border: 0.1rem solid #EEA19F;
@@ -236,11 +238,16 @@ body{
         width: 50px;
     }
 
-
-
-    /*--End Navbar--*/
+    #iconCart {
+        display: block;
+        margin-right: 5%;
+    }   
 
 }
+
+/*--End Navbar--*/
+
+
 
 /*--Header--*/
 
@@ -275,6 +282,7 @@ body{
     
    
 }
+
 #button {
     margin-left: 6.25rem;
 }
@@ -320,11 +328,8 @@ body{
     padding-right: 0.938rem;
 }
 
-/*--End Header--*/
-
 @media screen and (max-width: 900px) {
- 
-    /*--Header--*/
+
     #section {
         padding: 7.5rem 1.25rem 6.25rem 1.25rem;
         display: flex;
