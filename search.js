@@ -15,7 +15,7 @@ function openPage(){
     else if(search === "plant" || search === "Plant"){
         window.open("#.html","_self");
     }
-    else if(search === "apron" || search === "Apron"){
+    else if(search === "flask" || search === "Flask" || search === "gourd" || search === "Gourd"){
         window.open("#.html","_self");
     }
     else if(search === "Basile" || search === "The pro player" || search === "The best quality" || search === "The best of the BEST"){
@@ -31,3 +31,5 @@ function openPage(){
         alert("Page not found, please search something else ;)")
     }
 }
+
+openPage()
