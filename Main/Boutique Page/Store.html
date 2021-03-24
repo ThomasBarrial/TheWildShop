@@ -18,88 +18,77 @@
 <body>
 
     <header id="mainHeader">
-        <!-- Header NavBar -->
-         <div id="navbar">
-
-                <div id="topNav">
-
-                    <div id="divLogo">
-
-                        <img src="Images/Icon/Logo.svg" alt="Logo Wild Code School" id="logo">
-
-                </div>
-                
-                <div id="burgerNav" class="burgerNav">
-
-                    <div id="toggle-button" class="toggle-button">
-
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
-                </div>
-
+        <nav>
+          
+            <a href="/Users/thomas/Desktop/TheWildShop/Main/HomePage/homePage.html" class="logo"><img src="Images/Icon/Logo.svg" alt="Logo Wild Code School" ></a>
+            
+            <ul class="nav-links">
+                <li><a href="/Users/thomas/Desktop/TheWildShop/Main/HomePage/homePage.html">Home</a></li>
+                <li><a href="/Users/thomas/Desktop/TheWildShop/Main/Boutique Page/Store.html">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li id="liCart"><a href="#" id="cart">Cart</a></li>
+    
+    
+                            <form id="inputLogo">
+    
+                                <input type="text" id="inputSearch">
+    
+                                <button type="submit" id="submitButton">
+    
+                                    <img src="Images/Icon/SearchIcon.svg" alt="Search Icon"  id="submit">
+    
+                                </button>
+    
+                            </form>
+    
+                            <a href="#" id="iconCart"><img src="Images/Icon/shopping-cart.svg" alt="Icon cart"></a>
+            </ul>
+    
+            <div class="burger">
+                <div class="lineOne"></div>
+                <div class="lineTwo"></div>
+                <div class="lineThree"></div>
             </div>
-
-        </div>
-
-        <div id="divMenu">
-
-            <nav>
-                <ul id="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#" id="cart">Cart</a></li>
-
-                
-                    <form id="inputLogo">
-
-                        <input type="text" placeholder="Search" id="inputSearch">
-
-                        <button type="submit" id="submitButton">
-
-                            <img src="Images/Icon/SearchIcon.svg" alt="Search Icon"  id="submit">
-
-                        </button>
-                        
-                    </form>
-
-                    <a href="#" id="iconCart"><img src="Images/Icon/shopping-cart.svg" alt="Icon cart"></a>
-                
-                </ul>
-            </nav>
-
-        </div>
+    
+        </nav>
         
-    </div>
-
-
-
-        
-        <div id="textButton">
-            <div>
-                <h1 class="mainTitle">Welcome to the Wild Shop</h1>
-            </div>
-                <div>
-                    <h2 class="subTitle">Here you will find all a developer needs</h2>
-                </div>
-            <div id="button">
-                <button type="submit" id="goshopButton"><a href="#" target="_blank">GoShop</a></button>
-            </div>
-                            <!--MISSING LINK TO THE SHOP--> 
+            
+              <div id="textButton">
+                  <div>
+                       <h1 class="mainTitle">Welcome to the Wild Shop</h1>
+                 </div>
+                      <div>
+                           <h2 class="subTitle">Here you will find all a developer needs</h2>
+                      </div>
+                  <div id="button">
+                       <button type="submit" id="goshopButton"><a href="#" target="_blank">GoShop</a></button>
+                  </div>
+                                <!--MISSING LINK TO THE SHOP--> 
+               </div>
+            </section>
+    
+    
+        <div id="headerIcons">
+            <a href="https://twitter.com/wildschool_btz?lang=fr" target="_blank"><img src="Images/Icon/twitter.svg" alt="twitterIcon" ></a>
+            <a href="https://fr.linkedin.com/school/wild-code-school/" target="_blank"><img src="Images/Icon/linkedin-logo.svg" alt="linkedinIcon"></a>
+            <a href="https://github.com/WildCodeSchool" target="_blank"><img src="Images/Icon/github.svg" alt="githubIcon"></a>
+            <a href="https://www.instagram.com/wildcodeschool_biarritz/?hl=fr" target="_blank"><img src="Images/Icon/instagram-2.svg" alt="instagramIcon"></a>
         </div>
     
-
-
-    <div id="headerIcons">
-        <a href="https://twitter.com/wildschool_btz?lang=fr" target="_blank"><img src="Images/Icon/twitter.svg" alt="twitterIcon" ></a>
-        <a href="https://fr.linkedin.com/school/wild-code-school/" target="_blank"><img src="Images/Icon/linkedin-logo.svg" alt="linkedinIcon"></a>
-        <a href="https://github.com/WildCodeSchool" target="_blank"><img src="Images/Icon/github.svg" alt="githubIcon"></a>
-        <a href="https://www.instagram.com/wildcodeschool_biarritz/?hl=fr" target="_blank"><img src="Images/Icon/instagram-2.svg" alt="instagramIcon"></a>
-    </div>
-</header>
+        <form id="inputLogo2">
+    
+            <input type="text" id="inputSearch">
+    
+            <button type="submit" id="submitButton">
+    
+                <img src="Images/Icon/SearchIcon.svg" alt="Search Icon"  id="submit">
+    
+            </button>
+    
+        </form>
+    
+        </header>
 
 <!-- Header NavBar -->
 
@@ -111,7 +100,7 @@
                 <span></span>
             </div>
 
-            <h2 class="titleSide" >Filtre</h2>
+            <h2 class="titleSide" >Filters</h2>
             <h3>Filtre by prices :</h3>
             <div class="rangePrix">
                 <label for="prix-min">Prix minimum :</label>
@@ -133,7 +122,7 @@
             <h3>Best Promo :</h3>
             <div class="vignettePromo">
                 <h2>Wild Cup, Wild Life</h2>
-                <img class="imgCupPromo" src="Images/TasseCafe.webp" height="200px" width="200px">
+                <img class="imgCupPromo" src="Images/Produit/TasseCafé2.webp" height="200px" width="200px">
                 <p class="etoileV">★ ★ ★ ★ ☆</p>
                 <p>the perfect Mog to keep you Wilder's mind on shape. Warning, this mug only accept good cofee.</p>
                 
@@ -175,22 +164,23 @@
         <section class="content">
             <div class="titleOBP">
                 <h1>Shop</h1>
+                <h3>Filters</h3> 
                 <div class="allVignettes">
                     <div class="vignette">
                         <h2>Wild Cap</h2>
-                        <img class="imgCup" src="Images/Produit/CapPicture.webp">
+                        <img class="imgCup" src="Images/Produit/Cap.webp">
                         <p class="etoileV">★ ★ ★ ★ ☆</p>
                         <p>For every developer who has never seen the Sun. A nice useful cap ! You have to keep a wild skin.</p>
                         <div class="bottomV">
                             <button class="shopIt"><a href="#">Shop It !</a></button>
-                            <section class="prix">14,99€</section>
+                            <section class="prix">29.99€</section>
                         </div>
                     </div>
                     <div class="vignette">
                         <h2>Wild Cup, Wild Life</h2>
-                        <img class="imgCup" src="Images/Produit/MensShirt.webp" height="250px" width="250px">
-                        <p class="etoileV">★ ★ ★ ★ ☆</p>
-                        <p>the perfect Mog to keep you Wilder's mind on shape. Warning, this mug only accept good cofee.</p>
+                        <img class="imgCup" src="Images/Produit/TasseCafé2.webp" height="250px" width="250px">
+                        <p class="etoileV">★ ★ ★ ★ ★</p>
+                        <p>the perfect Mog to keep you Wilder's mind on shape. Warning, this mug only accept good coffee.</p>
                         <div class="bottomV">
                             <button class="shopIt"><a href="#">Shop It !</a></button>
                             <section class="prix">14,99€</section>
@@ -198,102 +188,75 @@
                     </div>
                     <div class="vignette">
                         <h2>T-shirt Men</h2>
-                        <img class="imgCup" src="Images/TasseCafe.webp" height="250px" width="250px">
+                        <img class="imgCup" src="Images/Produit/t-Shirt.webp" height="250px" width="250px">
                         <p class="etoileV">★ ★ ★ ★ ☆</p>
                         <p>Keep your wild style fresh and clean ! Get the most beautiful T-shirt in the wild world. You got it bro !</p>
                         <div class="bottomV">
                             <button class="shopIt"><a href="#">Shop It !</a></button>
-                            <section class="prix">14,99€</section>
+                            <section class="prix">39,99€</section>
                         </div>
                     </div>
+
+
                     <div class="vignette">
                         <h2>Wild plante</h2>
-                        <img class="imgCup" src="Images/Produit/PlanteWild.png">
+                        <img class="imgCup" src="Images/Produit/PlanteWild.webp">
                         <p class="etoileV">★ ★ ★ ★ ☆</p>
-                        <p>the perfect Mog to keep you Wilder's mind on shape. Warning, this mug only accept good cofee.</p>
+                        <p>Raised and protected by Marylou. It will always be by your side. Feel the WildLove every Day by this Banzai</p>
                         <div class="bottomV">
                             <button class="shopIt"><a href="#">Shop It !</a></button>
-                            <section class="prix">14,99€</section>
+                            <section class="prix">29,99€</section>
                         </div>
                     </div>
                     <div class="vignette">
-                        <h2>Wild Cup, Wild Life</h2>
-                        <img class="imgCup" src="Images/TasseCafe.webp" height="250px" width="250px">
+                        <h2>Wild Pen</h2>
+                        <img class="imgCup" src="Images/Produit/Stylo.webp" height="250px" width="250px">
                         <p class="etoileV">★ ★ ★ ★ ☆</p>
-                        <p>the perfect Mog to keep you Wilder's mind on shape. Warning, this mug only accept good cofee.</p>
+                        <p>Sign your best professional contracts with this Wild pen ! This pen only writes good ideas ! </p>
                         <div class="bottomV">
                             <button class="shopIt"><a href="#">Shop It !</a></button>
-                            <section class="prix">14,99€</section>
+                            <section class="prix">9,99€</section>
                         </div>
                     </div>
                     <div class="vignette">
-                        <h2>Wild Cup, Wild Life</h2>
-                        <img class="imgCup" src="Images/TasseCafe.webp" height="250px" width="250px">
-                        <p class="etoileV">★ ★ ★ ★ ☆</p>
-                        <p>the perfect Mog to keep you Wilder's mind on shape. Warning, this mug only accept good cofee.</p>
+                        <h2>Wild Thermos</h2>
+                        <img class="imgCup" src="Images/Produit/Gourde.webp" height="250px" width="250px">
+                        <p class="etoileV">★ ★ ★ ☆ ☆</p>
+                        <p>Pretend you ‘re hydrating with this opaque Flask. And carry your coffee every where in this amazing thermos !</p>
                         <div class="bottomV">
                             <button class="shopIt"><a href="#">Shop It !</a></button>
-                            <section class="prix">14,99€</section>
+                            <section class="prix">24,99€</section>
+                        </div>
+                    </div>
+
+                    <div class="vignette">
+                        <h2>Stickers</h2>
+                        <img class="imgCup" src="Images/Produit/Sticker.webp">
+                        <p class="etoileV">★ ★ ★ ★ ☆</p>
+                        <p>Spread the WildSpirit wherever it pleases you. The best decoration for your laptop. Different Sizes are available</p>
+                        <div class="bottomV">
+                            <button class="shopIt"><a href="#">Shop It !</a></button>
+                            <section class="prix">7,99€</section>
                         </div>
                     </div>
                     <div class="vignette">
-                        <h2>Wild Cup, Wild Life</h2>
-                        <img class="imgCup" src="Images/TasseCafe.webp">
-                        <p class="etoileV">★ ★ ★ ★ ☆</p>
-                        <p>the perfect Mog to keep you Wilder's mind on shape. Warning, this mug only accept good cofee.</p>
+                        <h2>Basile</h2>
+                        <img class="imgCup" src="Images/Produit/Basile.webp" height="250px" width="250px">
+                        <p class="etoileV">★ ★ ★ ★ ★</p>
+                        <p>The best JavaScript instructor ! Pro Wow Player ! Sometimes he doesn’t know what to say at the end of the day ! But he is cool !</p>
                         <div class="bottomV">
                             <button class="shopIt"><a href="#">Shop It !</a></button>
-                            <section class="prix">14,99€</section>
+                            <section class="prix">199,99€</section>
                         </div>
                     </div>
                     <div class="vignette">
-                        <h2>Wild Cup, Wild Life</h2>
-                        <img class="imgCup" src="Images/TasseCafe.webp" height="250px" width="250px">
-                        <p class="etoileV">★ ★ ★ ★ ☆</p>
-                        <p>the perfect Mog to keep you Wilder's mind on shape. Warning, this mug only accept good cofee.</p>
+                        <h2>Clément</h2>
+                        <img class="imgCup" src="Images/Produit/Clement.webp" height="250px" width="250px">
+                        <p class="etoileV">★ ★ ☆ ☆ ☆</p>
+                        <p>The best PhP instructor (Maybe). He doesn’t like the pressure and Javascript. But we still love him (Maybe)  even if he makes terrible jokes</p>
                         <div class="bottomV">
                             <button class="shopIt"><a href="#">Shop It !</a></button>
-                            <section class="prix">14,99€</section>
-                        </div>
-                    </div>
-                    <div class="vignette">
-                        <h2>Wild Cup, Wild Life</h2>
-                        <img class="imgCup" src="Images/TasseCafe.webp" height="250px" width="250px">
-                        <p class="etoileV">★ ★ ★ ★ ☆</p>
-                        <p>the perfect Mog to keep you Wilder's mind on shape. Warning, this mug only accept good cofee.</p>
-                        <div class="bottomV">
-                            <button class="shopIt"><a href="#">Shop It !</a></button>
-                            <section class="prix">14,99€</section>
-                        </div>
-                    </div>
-                    <div class="vignette">
-                        <h2>Wild Cup, Wild Life</h2>
-                        <img class="imgCup" src="Images/TasseCafe.webp">
-                        <p class="etoileV">★ ★ ★ ★ ☆</p>
-                        <p>the perfect Mog to keep you Wilder's mind on shape. Warning, this mug only accept good cofee.</p>
-                        <div class="bottomV">
-                            <button class="shopIt"><a href="#">Shop It !</a></button>
-                            <section class="prix">14,99€</section>
-                        </div>
-                    </div>
-                    <div class="vignette">
-                        <h2>Wild Cup, Wild Life</h2>
-                        <img class="imgCup" src="Images/TasseCafe.webp" height="250px" width="250px">
-                        <p class="etoileV">★ ★ ★ ★ ☆</p>
-                        <p>the perfect Mog to keep you Wilder's mind on shape. Warning, this mug only accept good cofee.</p>
-                        <div class="bottomV">
-                            <button class="shopIt"><a href="#">Shop It !</a></button>
-                            <section class="prix">14,99€</section>
-                        </div>
-                    </div>
-                    <div class="vignette">
-                        <h2>Wild Cup, Wild Life</h2>
-                        <img class="imgCup" src="Images/TasseCafe.webp" height="250px" width="250px">
-                        <p class="etoileV">★ ★ ★ ★ ☆</p>
-                        <p>the perfect Mog to keep you Wilder's mind on shape. Warning, this mug only accept good cofee.</p>
-                        <div class="bottomV">
-                            <button class="shopIt"><a href="#">Shop It !</a></button>
-                            <section class="prix">14,99€</section>
+                            <section class="prix">2,99€</section>
                         </div>
                     </div>
 
@@ -302,73 +265,72 @@
         </section>
         <!-- End Store Section -->
 
+                  <!-- Section Footer -->
+                  <section class="SectionFooter">
 
-                    <!-- Section Footer -->
-                    <section class="SectionFooter">
-
-                        <div class="footerBG">
-                
-                            <div class="List"> 
-                
-                                <div class="footerList">
-                                    <h3>Payment</h3>
-                                    <a href="https://twitter.com/wildschool_btz?lang=fr" target="_blank" class="icon"><img src="Images/Icon/visa.svg" alt="twitterIcon" ><p>Visa</p></a>
-                                    <a href="https://fr.linkedin.com/school/wild-code-school/" target="_blank" class="icon"><img src="Images/Icon/mastercard.svg" alt="linkedinIcon"><p>MasterCard</p></a>
-                                    <a href="https://github.com/WildCodeSchool" target="_blank" class="icon"><img src="Images/Icon/paypal.svg" alt="githubIcon"><p>PayPal</p></a>
-                                    <a href="https://www.instagram.com/wildcodeschool_biarritz/?hl=fr" target="_blank" class="icon"><img src="Images/Icon/american-express-2.svg" alt="instagramIcon"><p>AExpress</p></a>
-                
-                
-                                </div>
-                
-                                <div class="footerList">
-                                    <h3>Follow Us</h3>
-                                    <a href="https://twitter.com/wildschool_btz?lang=fr" target="_blank" class="icon"><img src="Images/Icon/twitter.svg" alt="twitterIcon" ><p>twitter</p></a>
-                                    <a href="https://fr.linkedin.com/school/wild-code-school/" target="_blank" class="icon"><img src="Images/Icon/linkedin-logo.svg" alt="linkedinIcon"><p>LinkedIn</p></a>
-                                    <a href="https://github.com/WildCodeSchool" target="_blank" class="icon"><img src="Images/Icon/github.svg" alt="githubIcon"><p>GitHub</p></a>
-                                    <a href="https://www.instagram.com/wildcodeschool_biarritz/?hl=fr" target="_blank" class="icon"><img src="Images/Icon/instagram-2.svg" alt="instagramIcon"><p>Instagram</p></a>
-                
-                                </div>
-                
-                                <div class="footerList">
-                                    <h3>Legal Terms</h3>
-                                    <div class="list3">
-                                    <a href="https://twitter.com/wildschool_btz?lang=fr" target="_blank"><p>Terms and legal Conditions</p></a>
-                                    <a href="https://fr.linkedin.com/school/wild-code-school/" target="_blank" ><p>Evaluation System</p></a>
-                                    <a href="https://github.com/WildCodeSchool" target="_blank"><p>Private Policy</p></a>
-                                    <a href="https://www.instagram.com/wildcodeschool_biarritz/?hl=fr" target="_blank" ><p>Return and refunds</p></a>
-                                    </div>
-                
-                                </div>
-                            
-                
+                    <div class="footerBG">
+            
+                        <div class="List"> 
+            
+                            <div class="footerList">
+                                <h3>Payment</h3>
+                                <a href="https://twitter.com/wildschool_btz?lang=fr" target="_blank" class="icon"><img src="Images/Icon/visa.svg" alt="twitterIcon" ><p>Visa</p></a>
+                                <a href="https://fr.linkedin.com/school/wild-code-school/" target="_blank" class="icon"><img src="Images/Icon/mastercard.svg" alt="linkedinIcon"><p>MasterCard</p></a>
+                                <a href="https://github.com/WildCodeSchool" target="_blank" class="icon"><img src="Images/Icon/paypal.svg" alt="githubIcon"><p>PayPal</p></a>
+                                <a href="https://www.instagram.com/wildcodeschool_biarritz/?hl=fr" target="_blank" class="icon"><img src="Images/Icon/american-express-2.svg" alt="instagramIcon"><p>AExpress</p></a>
+            
+            
                             </div>
-                
-                            <div class="NewsLetter">
-                                    <h2>Our NewsLetter</h2>
-                
-                                        <form class="inputs">
-                                            <input type="text" class="InputMail">
-                                            <button type="submit" class="InputSubscrib">Subscribe</button>
-                                        </form  >
-                
-                                        <div class="Copyright">
-                                            <p>Made by happy Wilders:<br> Joseph /Mathias /Remi /Thomas</p>
-                                            <p class="Cpyrght">@WildCodeSchool</p>
-                
-                                        </div>
-                
-                                </div>
-                
+            
+                            <div class="footerList">
+                                <h3>Follow Us</h3>
+                                <a href="https://twitter.com/wildschool_btz?lang=fr" target="_blank" class="icon"><img src="Images/Icon/twitter.svg" alt="twitterIcon" ><p>twitter</p></a>
+                                <a href="https://fr.linkedin.com/school/wild-code-school/" target="_blank" class="icon"><img src="Images/Icon/linkedin-logo.svg" alt="linkedinIcon"><p>LinkedIn</p></a>
+                                <a href="https://github.com/WildCodeSchool" target="_blank" class="icon"><img src="Images/Icon/github.svg" alt="githubIcon"><p>GitHub</p></a>
+                                <a href="https://www.instagram.com/wildcodeschool_biarritz/?hl=fr" target="_blank" class="icon"><img src="Images/Icon/instagram-2.svg" alt="instagramIcon"><p>Instagram</p></a>
+            
                             </div>
-                
-                
+            
+                            <div class="footerList">
+                                <h3>Legal Terms</h3>
+                                <div class="list3">
+                                <a href="https://twitter.com/wildschool_btz?lang=fr" target="_blank"><p>Terms and legal Conditions</p></a>
+                                <a href="https://fr.linkedin.com/school/wild-code-school/" target="_blank" ><p>Evaluation System</p></a>
+                                <a href="https://github.com/WildCodeSchool" target="_blank"><p>Private Policy</p></a>
+                                <a href="https://www.instagram.com/wildcodeschool_biarritz/?hl=fr" target="_blank" ><p>Return and refunds</p></a>
+                                </div>
+            
+                            </div>
+                        
+            
                         </div>
-                
-                
-                
-                    </section>
-                
-                <!--  End Section Footer -->
+            
+                        <div class="NewsLetter">
+                                <h2>Our NewsLetter</h2>
+            
+                                    <form class="inputs">
+                                        <input type="text" class="InputMail">
+                                        <button type="submit" class="InputSubscrib">Subscribe</button>
+                                    </form  >
+            
+                                    <div class="Copyright">
+                                        <p>Made by happy Wilders:<br> Joseph /Mathias /Remi /Thomas</p>
+                                        <p class="Cpyrght">@WildCodeSchool</p>
+            
+                                    </div>
+            
+                            </div>
+            
+                        </div>
+            
+            
+                    </div>
+            
+            
+            
+                </section>
+             
+            <!--  End Section Footer -->
 
 
 
