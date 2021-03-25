@@ -1,10 +1,10 @@
 function openPage(){
     const search = document.getElementById("inputSearch").value;
     if( search === "cap" || search === "Cap" || search === "CAp" || search === "CAP"){
-        window.open("capTest.html","_self");
+        window.open("#.html","_self");
     }
     else if(search === "mug" || search === "Mug" || search === "MUg" || search === "MUG" || search === "cup" || search === "Cup" || search === "CUp" || search === "CUP"){
-        window.open("index.html","_self");
+        window.open("#.html","_self");
     }
     else if(search === "t-shirt" || search === "T-shirt" || search === "T-Shirt" || search === "tshirt" || search === "Tshirt"){
         window.open("#.html","_self");
@@ -27,6 +27,9 @@ function openPage(){
     else if(search === "sticker" || search === "Stickers" || search === "Sticker" || search === "stickers"){
         window.open("#.html","_self");
     } 
+    else if(search === "signin" || search === "SignIn" || search === "signIn" || search === "Signin" || search === "Sign In" || search === "sign in" || search === "sign In" || search === "Sign in" || search === "Login" || search === "LogIn" || search === "logIn" || search === "login"){
+        window.open("#.html","_self");
+    }
     else if( search === ""){
 
     }
