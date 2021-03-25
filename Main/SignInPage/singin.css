@@ -1,0 +1,732 @@
+*::after ::before {
+    box-sizing: border-box;
+    
+}
+
+
+body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+
+/*-- Navbar --*/
+
+nav {
+    z-index: 4;
+    width: 95%;
+    position: fixed;
+    padding-left: 2%;
+    margin: 1% 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: white;
+    font-family: 'Varela Round', sans-serif;
+    border-radius: 40px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.521);;
+}
+.logo img {
+    height: 90px;
+}
+
+.nav-links{
+    width: 100%;
+    margin: 0;
+    padding-right: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+   
+}
+
+.nav-links a{
+    color: #EEA19F;
+
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size : 14px;
+   
+}
+
+
+.nav-links a.grow {
+    transition: all .2s ease-in-out;
+    
+}
+.nav-links a:hover {
+    transform: scale(1.1);
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #EEA19F;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+#inputLogo{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+   margin-left: 5%;
+}
+
+#inputLogo2 {
+ display: none;
+}
+
+#cart {
+    display: none;
+}
+
+#inputSearch {
+    z-index: 2;
+    width: 100%;
+    margin-left: 10PX;
+    padding: 3% 5%;
+    background-color: #EEA19F;
+    border: 0.1rem solid #EEA19F;
+    border-radius: 25rem;
+    color: white;
+    font-size: 15px;
+}
+
+#submitButton {
+    z-index: 1;
+    border: none;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit {
+    height: 50px;
+    width: 50px;
+}
+
+#iconCart img {
+    padding-top: 40%;
+    height: 35px;
+    width: 35px;
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-y: hidden;
+    }
+
+    .logo {
+        margin-right: 30%;
+        z-index: 4;
+        height: 80%;
+    }
+    #cart {
+        display: block;
+    }
+    nav {
+        width: 95%;
+        padding-left: 0;
+        position: fixed;
+    }
+
+    .removeNav{
+        display: none; 
+    }
+
+    .nav-links{
+        padding: 0;
+        padding-top: 10%;
+        padding-left: 12%;
+        padding-bottom: 5%;
+        margin: 0;
+        position: absolute;
+        z-index: 3;
+        height: 40vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 88%;
+        transform: translateY(-200%);
+        transition: transform 0.0s ease-in;
+        box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.521);;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+
+    .nav-links li{
+        width: 82%;
+        margin-top: 4%;
+        opacity: 0;
+        padding-bottom: 2%;
+        border-bottom: 1px solid #EEA19F;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+
+    #inputLogo{
+        width: 90%;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+       margin-right: 10%;
+       margin-left: 0;
+       margin-top: 20px;
+    }
+    
+    #inputLogo2{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-left: 2%;
+    }
+    
+    #inputSearch {
+        z-index: 2;
+        height: 95%;
+        width: 85%;
+        padding: 2% 10d%;
+        padding-left: 1%;
+        padding-right: 1%;
+        background-color: #EEA19F;
+        border: 0.1rem solid #EEA19F;
+        border-radius: 25rem;
+        color: white;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.521);;
+    }
+    
+    #submitButton {
+        z-index: 1;
+        margin: 0;
+        margin-right: 5%;
+        padding: 0;
+        width: 20%;
+        border-radius: 100px;
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #submit {
+        height: 65%;
+        width: 65%;
+    }
+    
+    #iconCart {
+        display: none;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .lineOne{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .lineTwo{
+    opacity: 0;
+}
+
+.toggle .lineThree{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/*--End Navbar--*/
+
+/*--Header--*/
+
+#mainHeader {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(Images/BackGround/BackgroundShop-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0.2%;
+}
+
+.mainTitle {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 80px;
+    font-weight: normal;
+    color: #FFF;
+    width: 40%;
+    margin: 0;
+    margin-top: 6%;
+    margin-left: 5%;
+    padding-top: 5%;
+
+}
+
+
+#textButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subTitle {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40px;
+    color: #FFF;
+    width: 40%;
+    margin: 0;
+    margin-top: 2%;
+    margin-left: 5%;
+      
+}
+
+#headerIcons {
+    margin-top: 8%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    height: 1.875rem;
+    max-height: 100%;
+}
+
+#goshopButton:hover {
+    background-color: var(--coral);
+    color: #FFF;
+}
+
+#goshopButton {
+    color: #ECA19F;
+    background-color: white;
+    border-radius: 25px;
+    padding: 0.625rem 3.125rem;
+    font-size: 20px;    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+    border: none;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+#goshopButton a {
+    text-decoration: none;
+    color: var(--coral);
+}
+
+#goshopButton:hover a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#headerIcons a{
+    padding-right: 0.938rem;
+}
+
+@media screen and (max-width: 900px) {
+
+    #section {
+        padding: 7.5rem 1.25rem 6.25rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .Gif {
+       display: none;
+    }
+
+    .mainTitle {
+        width: 75%;
+        margin-left: 8%;
+        margin-top: 25%;
+        padding: 0;
+        font-size: 60px;
+    
+    }
+
+    .subTitle {
+        font-size: 30px;
+        margin-left: 8%;
+        margin-top: 5%;
+        width: 80%;
+    }
+
+    #button {
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+
+
+    #headerIcons {
+        margin-top: 30%;
+        margin-left: 8%;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #headerIcons a img{
+        height: 1.25rem;
+    }
+    /*--End Header--*/
+}
+
+
+  /* -- Signup -- */
+
+  .signUp {
+      width: 94%;
+      height: 100%;
+      margin: 10% 3%;
+      padding-bottom: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #EEA19F;
+      border-radius: 50px;
+      font-family: 'Raleway', sans-serif;
+      color: #FFF;
+      background-image: url(PATTERN_Plan de travail 1.png);
+      background-size: 400%;
+    }
+
+    .signUpForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  .signUp h2 {
+      text-align: center;
+      font-size: 40px;
+  }
+
+  .signUpForm label {
+      font-size: 20px;
+      font-weight: bolder;
+  }
+
+  .signUpForm input{
+     margin-top: 2%;
+     margin-bottom: 5%;
+     border: none;
+     border-radius: 40px;
+     padding-top: 5%;
+     padding-bottom: 5%;
+     padding-left: 5%;
+     outline: none;
+     color: #EEA19F;
+     font-size: 16px;
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+  }
+   
+    .btnSignUp {
+        width: 50%;
+        border-radius: 50px;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        padding: 5% 10%;
+        border: none;
+        color: #EEA19F;
+        background-color: white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+        font-size: 16px;
+    }
+
+    .btnSignUp:hover {
+        background-color: #EEA19F;
+        color: #FFF;
+    }
+
+@media screen and (min-width: 900px) {
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .signUp {
+        width: 100%;
+        border-radius: 1000px;
+        padding: 5% 5% 5% 5%;
+        margin: 10% 20% 10% 20%;
+    }
+
+    .signUpForm h2 {
+        font-size: 60px;
+        font-weight: bolder;
+        margin-top: 5%;
+        text-shadow: 0 0 5px rgb(231, 233, 240), 0 0 5px rgb(207, 30, 113), 0 0 5px #EEA19F;
+    }
+
+  .signUpForm input{
+    margin-top: 5%;
+    margin-bottom: 8%;
+    text-shadow: 0 0 1px rgb(231, 233, 240), 0 0 0.5px rgb(207, 30, 113), 0 0 1px #EEA19F;
+  }
+  .signUpForm label {
+    font-size: 25px;
+    text-shadow: 0 0 2px rgb(231, 233, 240), 0 0 2px rgb(207, 30, 113), 0 0 2px #EEA19F;
+  }
+}
+
+* -- Footer -- */
+.SectionFooter {
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.footerBG {
+    margin: auto;
+    padding: 10px;
+    width: 95%;
+    height: 350px;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+}
+
+.List {
+width: 55%;
+height: 80%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+.list3 {
+line-height: 15px;
+
+
+}
+
+
+.footerList {
+    height: 100%;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerList  a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #EEA19F;
+    display: flex;
+    flex-direction: row;
+}
+
+.footerList  p {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 5%;
+}
+
+.footerList  h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #EEA19F;
+}
+
+
+
+.NewsLetter {
+    height: 80%;
+    width: 30%;
+    margin-left: 5%;
+    
+   
+}
+
+.NewsLetter h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #EEA19F;
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+.InputMail {
+    color: white;
+    height: 2rem;
+    width: 60%;
+    padding-left: 10px;
+    border-radius: 40px;
+    border: none;
+    background-color: #EEA19F;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+}
+
+.InputSubscrib {
+    font-family: 'Raleway', sans-serif;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    background-color: #EEA19F;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+    margin-left: 1rem;
+}
+
+.Copyright {
+    margin-top: 1.6rem;
+}
+
+.Copyright p {
+    font-family: 'Raleway', sans-serif;
+    color: #EEA19F;
+    line-height: 1.5rem;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .SectionFooter {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .footerBG {
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        margin-bottom: 25%;
+    }
+
+    .List {
+        width: 100%;
+        height: 60%;
+       
+    }
+
+ 
+   .footerList {
+       height: 100%;
+       width: 50%;
+       margin: 0;
+       padding: 0 2%;
+       display: flex;
+       align-items: flex-start;
+   }
+
+   .footerList h3 {
+    font-size: 18px;
+    }
+
+    .footerList p {
+        font-size: 15px;
+        margin: 0;
+        margin-left: 0.5rem;
+        padding: 0;
+    }
+
+    .footerList .list3 {
+        line-height: 23px;
+    }
+
+    .icon {
+        height: 20px;
+        width: 20px;
+        margin: 5px;
+    
+        }
+
+   .NewsLetter {
+    width: 90%;
+    height: 50%;
+    margin: 0;
+
+    }
+
+    .NewsLetter h2 {
+       margin: 0;
+       padding: 0;
+    }
+  
+    .inputs {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+   
+    .inputs .InputMail {
+        width: 70%;
+        margin: 0;
+    }
+   
+    .inputs .InputSubscrib {
+        font-size: 12px;;
+        width: 20%; 
+
+    }
+
+    .Copyright {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Copyright p {
+        margin: 0;
+    }
+
+    .Cpyrght {
+        display: flex;
+        align-items: flex-end;
+        padding-left: 50px;
+    }
+
+
+}
+
+/* -- End-- */
+
+
+

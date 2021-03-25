@@ -9,7 +9,6 @@ body {
    height: 100%;
    margin: 0;
    padding: 0;
-   
 }
 
 
@@ -282,7 +281,7 @@ nav {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url(Images/BackGround/BackgroundShop-5.webp);
+    background-image: url(Images/BackGround/BackGroundV3R.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 0.2%;
@@ -301,14 +300,7 @@ nav {
 
 }
 
-.Gif {
-    z-index: 1;
-    position: absolute;
-    left: 50%;
-    top: 25%;
-    height: 60%;
-    width: 50%;
-}
+
 #textButton{
     display: flex;
     flex-direction: column;
@@ -405,7 +397,7 @@ nav {
 
 
     #headerIcons {
-        margin-top: 30%;
+        margin-top: 35%;
         margin-left: 8%;
         padding: 0;
         display: flex;

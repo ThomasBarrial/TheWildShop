@@ -279,7 +279,7 @@ nav {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url(Images/BackGround/BackgroundShop-3.webp);
+    background-image: url(Images/BackGround/BackGroundV3R.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 0.2%;
@@ -633,7 +633,7 @@ nav {
 .titleOBP h3 {
     color: #EEA19F;
     margin: 0px; 
-    padding-right: 65%;
+    padding-right: 63%;
     font-family: 'Varela Round', sans-serif;
 }
 

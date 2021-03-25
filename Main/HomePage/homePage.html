@@ -19,9 +19,9 @@
             <ul class="nav-links">
                 <li><a href="/Users/thomas/Desktop/TheWildShop/Main/HomePage/homePage.html">Home</a></li>
                 <li><a href="/Users/thomas/Desktop/TheWildShop/Main/Boutique Page/Store.html">Shop</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-                <li id="liCart"><a href="#" id="cart">Cart</a></li>
+                <li><a href="/Users/thomas/Desktop/TheWildShop/Main/PageContact/contact.html">Contact</a></li>
+                <li><a href="/Users/thomas/Desktop/TheWildShop/Main/PageAbout/about.html">About</a></li>
+                <li id="liCart"><a href="/Users/thomas/Desktop/TheWildShop/Main/PagePanier/panier.html" id="cart">Cart</a></li>
     
     
                             <form id="inputLogo">
@@ -36,7 +36,7 @@
     
                             </form>
     
-                            <a href="#" id="iconCart"><img src="Images/Icon/shopping-cart.svg" alt="Icon cart"></a>
+                            <a href="/Users/thomas/Desktop/TheWildShop/Main/PagePanier/panier.html" id="iconCart"><img src="Images/Icon/shopping-cart.svg" alt="Icon cart"></a>
             </ul>
     
             <div class="burger">
@@ -57,12 +57,11 @@
                            <h2 class="subTitle">Here you will find all a developer needs</h2>
                       </div>
                   <div id="button">
-                       <button type="submit" id="goshopButton"><a href="#" target="_blank">GoShop</a></button>
+                       <button type="submit" id="goshopButton"><a href="/Users/thomas/Desktop/TheWildShop/Main/Boutique Page/Store.html" target="_blank">GoShop</a></button>
                   </div>
                                 <!--MISSING LINK TO THE SHOP--> 
                </div>
            
-               <img src="Images/BackGround/Laptop-AnimatedLogo-White- (1).gif" class="Gif">
     
     
         <div id="headerIcons">
@@ -76,7 +75,7 @@
     
             <input type="text" id="inputSearch">
     
-            <button type="submit" id="submitButton">
+            <button type="submit" onclick="openPage(event)" id="submitButton">
     
                 <img src="Images/Icon/SearchIcon.svg" alt="Search Icon"  id="submit">
     
@@ -99,12 +98,12 @@
                         <div class="vignette">
 
                             <h2>Wild Cap</h2>
-                            <img class="imgCup" src="Images/Produit/Cap.webp">
+                            <a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/WildCap/product.html"><img class="imgCup" src="Images/Produit/Cap.webp"></a>
                             <p class="etoileV">★ ★ ★ ★ ☆</p>
                             <p>For every developer who has never seen the Sun. A nice useful cap ! You have to keep a wild skin.</p>
 
                             <div class="bottomV">
-                                <button class="shopIt"><a href="#">Shop It !</a></button>
+                                <button class="shopIt"><a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/WildCap/product.html">Shop It !</a></button>
                                 <section class="prix">29,99€</section>
                             </div>
 
@@ -113,12 +112,12 @@
                     <div class="vignette">
 
                             <h2>Wild Cup, Wild Life</h2>
-                            <img class="imgCup" src="Images/Produit/TasseCafé2.webp" height="250px" width="250px">
+                            <a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/WildMug/product.html"><img class="imgCup" src="Images/Produit/TasseBlanche.webp" height="250px" width="250px"></a>
                             <p class="etoileV">★ ★ ★ ★ ☆</p>
                             <p>the perfect Mog to keep you Wilder's mind on shape. Warning, this mug only accept good coffe.</p>
 
                             <div class="bottomV">
-                                <button class="shopIt"><a href="#">Shop It !</a></button>
+                                <button class="shopIt"><a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/WildMug/product.html">Shop It !</a></button>
                                 <section class="prix">14,99€</section>
                             </div>
 
@@ -127,12 +126,12 @@
                     <div class="vignette">
 
                             <h2>T-Shirt</h2>
-                            <img class="imgCup" src="Images/Produit/t-Shirt.webp" height="250px" width="250px">
+                            <a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/WildShirt/product.html"><img class="imgCup" src="Images/Produit/t-Shirt.webp" height="250px" width="250px"></a>
                             <p class="etoileV">★ ★ ★ ★ ☆</p>
                             <p>Keep your wild style fresh and clean ! Get the most beautiful T-shirt in the wild world. You got it</p>
 
                             <div class="bottomV">
-                                <button class="shopIt"><a href="#">Shop It !</a></button>
+                                <button class="shopIt"><a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/WildShirt/product.html">Shop It !</a></button>
                                 <section class="prix">39,99€</section>
                             </div>
 
@@ -211,6 +210,6 @@
         <!--  End Section Footer -->
     </section>
 
- <script src="/HomePage/homeScript.js"></script>
+ <script src="homeScript.js"></script>
     
 </body> 
