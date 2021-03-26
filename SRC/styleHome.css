@@ -1,0 +1,381 @@
+:root{
+    --coral: #EEA19F;
+}
+
+*::after ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    background-image: url(Images/BackGround/BackgroundShop-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/*-- Navbar --*/
+
+#navbar {
+    margin: 10px auto;
+    padding: 10px;
+    width: 95%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 0.1rem solid white;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+}
+
+#topNav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#divLogo{
+    height: 70px;
+}
+
+#logo {
+    height: 100%;
+    margin-left: 2%;
+} 
+
+#burgerNav {
+    width: 100%;
+    padding: 0px;
+    padding-right: 2%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.burgerNav.active {
+    max-height: 100%;
+}
+
+.burgerNav.active span {
+    margin-right: 0vh;
+}
+
+.burgerNav.active span:nth-child(1) {
+    transform: translate(0px, 9px) rotate(45deg);   
+}
+
+.burgerNav.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burgerNav.active span:nth-child(3) {
+    transform: translate(0px, -9px) rotate(-45deg);
+}
+
+#toggle-button {
+    margin-left: 0rem;
+}
+
+.toggle-button span {
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background: #EEA19F;
+    display: block;
+    margin: 10%;
+    transition: 0.5s ease;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 2%;
+    width: 100%;
+}
+
+#menu li {
+    border-bottom: 0.1rem solid #EEA19F;
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #EEA19F;
+}
+
+#inputLogo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#inputSearch {
+    height: 100%;
+    padding-right: 10px;
+    background-color: #EEA19F;
+    border: 0.1rem solid #EEA19F;
+    border-radius: 25rem;
+    color: white;
+}
+
+#submitButton {
+    border: none;
+    background: white;
+}
+
+#iconCart {
+    display: none;
+}
+
+@media screen and (min-width: 450px){
+
+    #navbar {
+        margin: 10px auto;
+        padding: 10px;
+        width: 95%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 0.1rem solid white;
+        border-radius: 40px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+    }
+    
+    #topNav {
+        flex: 25%;
+        width: 0%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    #divLogo{
+        height: 70px;
+    }
+    
+    #logo {
+        height: 100%;
+        margin-left: 2%;
+    } 
+    
+    #side-bar {
+        width: 0%;
+        padding: 0px;
+        padding-right: 2%;
+        display: none;
+    }
+    
+    #toggle-button {
+        margin-left: 0rem;
+    }
+    
+    .toggle-button span {
+        width: 0px;
+        height: 0px;
+        border-radius: 5px;
+        background: #EEA19F;
+        display: none;
+        margin: 10%;
+    }
+
+    #divMenu {
+        flex: 75%;
+    }
+    
+    #menu {
+        display: flex;
+        align-items: center;
+        flex-direction: row; 
+        width: 100%;
+        padding-right: 0px;
+        margin: 0px;
+        margin-left: 0px;
+    }
+    
+    #menu li {
+        border-bottom: 0rem solid #EEA19F;
+        list-style: none;
+        padding-right: 5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 5%;
+    }
+    
+    #menu li a {
+        text-decoration: none;
+        color: #EEA19F;
+    }    
+
+    #cart {
+        display: none;
+    }
+
+    #inputSearch {
+        background-color: #EEA19F;
+        border: 0.1rem solid #EEA19F;
+        border-radius: 25rem;
+        color: white;
+        padding: 2% 4%;
+    }
+
+    #submit {
+        height: 50px;
+        width: 50px;
+    }
+
+    #iconCart {
+        display: block;
+        margin-right: 5%;
+    }   
+
+
+}
+
+/*--End Navbar--*/
+
+
+
+/*--Header--*/
+
+#section {
+    width: 100%;
+    height: 100%;
+    padding-top: 6.25rem;
+}
+
+.mainTitle {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 80px;
+    font-weight: normal;
+    color: #FFF;
+    margin: 0px 0 0.625rem 6.25rem;
+    width: 40%;
+
+}
+
+#textButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subTitle {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 50px;
+    color: #FFF;
+    margin: 0 0 1.25rem 6.25rem;
+    width: 40%;
+    
+   
+}
+
+#button {
+    margin-left: 6.25rem;
+}
+
+#headerIcons {
+    padding-right: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-top: 18.75rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    height: 1.875rem;
+    max-height: 100%;
+}
+
+#goshopButton:hover {
+    background-color: var(--coral);
+    color: #FFF;
+}
+
+#goshopButton {
+    color: var(--coral);
+    background-color: #FFF;
+    border-radius: 25px;
+    padding: 0.625rem 3.125rem;
+    font-size: 20px;    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+    border: none;
+    
+}
+
+#goshopButton a {
+    text-decoration: none;
+    color: var(--coral);
+}
+
+#goshopButton:hover a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#headerIcons a{
+    padding-right: 0.938rem;
+}
+
+@media screen and (max-width: 900px) {
+
+    #section {
+        padding: 7.5rem 1.25rem 6.25rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .mainTitle {
+        width: 100%;
+        margin: 0 0 1.25rem;
+        padding: 0;
+        font-size: 50px;
+    
+    }
+
+    .subTitle {
+        font-size: 30px;
+        margin: 0;
+        width: 100%;
+    }
+
+    #button {
+        margin: 0px;
+        padding-top: 1.25rem;
+    }
+
+
+    #headerIcons {
+        padding-top: 12.5rem;
+        padding-left: 1.25rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #headerIcons a img{
+        height: 1.25rem;
+        padding-bottom: 3.125rem;
+    }
+    /*--End Header--*/
+}
