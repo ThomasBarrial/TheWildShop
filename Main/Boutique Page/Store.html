@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WildShopStore</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Store.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="mainHeader">
+        <nav>
+          
+            <a href="/Users/thomas/Desktop/TheWildShop/Main/HomePage/homePage.html" class="logo"><img src="Images/Icon/Logo.svg" alt="Logo Wild Code School" ></a>
+            
+            <ul class="nav-links">
+                <li><a href="/Users/thomas/Desktop/TheWildShop/Main/HomePage/homePage.html">Home</a></li>
+                <li><a href="/Users/thomas/Desktop/TheWildShop/Main/Boutique Page/Store.html">Shop</a></li>
+                <li><a href="/Users/thomas/Desktop/TheWildShop/Main/PageContact/contact.html">Contact</a></li>
+                <li><a href="/Users/thomas/Desktop/TheWildShop/Main/PageAbout/about.html">About</a></li>
+                <li id="liCart"><a href="/Users/thomas/Desktop/TheWildShop/Main/PagePanier/panier.html" id="cart">Cart</a></li>
+    
+    
+                            <form id="inputLogo">
+    
+                                <input type="text" id="inputSearch">
+    
+                                <button type="submit" onclick="openPage(event)" id="submitButton">
+    
+                                    <img src="Images/Icon/SearchIcon.svg"  alt="Search Icon"  id="submit">
+    
+                                </button>
+    
+                            </form>
+    
+                            <a href="/Users/thomas/Desktop/TheWildShop/Main/PagePanier/panier.html" id="iconCart"><img src="Images/Icon/shopping-cart.svg" alt="Icon cart"></a>
+            </ul>
+    
+            <div class="burger">
+                <div class="lineOne"></div>
+                <div class="lineTwo"></div>
+                <div class="lineThree"></div>
+            </div>
+    
+        </nav>
+        
+            
+              <div id="textButton">
+                  <div>
+                       <h1 class="mainTitle">Welcome to the Wild Shop</h1>
+                 </div>
+                      <div>
+                           <h2 class="subTitle">Here you will find all a developer needs</h2>
+                      </div>
+                  <div id="button">
+                       <button type="submit" id="goshopButton"><a href="/Users/thomas/Desktop/TheWildShop/Main/PageAbout/about.html" target="_blank">AboutUs</a></button>
+                  </div>
+                                <!--MISSING LINK TO THE SHOP--> 
+               </div>
+            </section>
+    
+    
+        <div id="headerIcons">
+            <a href="https://twitter.com/wildschool_btz?lang=fr" target="_blank"><img src="Images/Icon/twitter.svg" alt="twitterIcon" ></a>
+            <a href="https://fr.linkedin.com/school/wild-code-school/" target="_blank"><img src="Images/Icon/linkedin-logo.svg" alt="linkedinIcon"></a>
+            <a href="https://github.com/WildCodeSchool" target="_blank"><img src="Images/Icon/github.svg" alt="githubIcon"></a>
+            <a href="https://www.instagram.com/wildcodeschool_biarritz/?hl=fr" target="_blank"><img src="Images/Icon/instagram-2.svg" alt="instagramIcon"></a>
+        </div>
+    
+        <form id="inputLogo2">
+    
+            <input type="text" id="inputSearch">
+    
+            <button type="submit" onclick="openPage()" id="submitButton">
+    
+                <img src="Images/Icon/SearchIcon.svg" alt="Search Icon"  id="submit">
+    
+            </button>
+    
+        </form>
+    
+        </header>
+
+<!-- Header NavBar -->
+
+        <!-- Store Section -->
+        <div id="side-bar">
+            <div class="toggle-button" id="toggle-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <h2 class="titleSide" >Filters</h2>
+            <h3>Filtre by prices :</h3>
+            <div class="rangePrix">
+                <label for="prix-min">Prix minimum :</label>
+                <input type="range" id="prix-min">
+                <label for="prix-max">Prix maximum :</label>
+                <input type="range" id="prix-max" min="0" max="50">
+            </div>
+
+            <div class="categories">
+                <h3>Filtre by categories :</h3>
+                <ul>
+                    <li>Accesories</li>
+                    <li>Clothes</li>
+                    <li>Teachers</li>
+                    <li>Others</li>
+                </ul>
+            </div>
+
+            <h3>Best Promo :</h3>
+            <div class="vignettePromo">
+                <h2>Wild Cup, Wild Life</h2>
+                <img class="imgCupPromo" src="Images/Produit/TasseBlanche.webp" height="200px" width="200px">
+                <p class="etoileV">★ ★ ★ ★ ☆</p>
+                <p>The perfect Mug to keep your Wilder's mind on shape. Warning, this mug only accepts good coffee.</p>
+                
+                <div class="bottomV">
+                    <button class="shopItSide"><a href="#">Shop It</a></button>
+                    <section class="prix">14,99€</section>
+                </div>
+
+            </div>
+
+            <h3>Comments :</h3>
+            <div class="commentaires">
+                <img class="pPCom" src="Images/PhotoiNSTA.png">
+                <div class="etoileCom">
+                    <p class="comSide">Site pas ouf, mais les dev' sont cool</p>
+                    <p class="etoileC">★ ★ ★ ★ ☆</p>
+                </div>
+            </div>
+
+            <div class="commentaires">
+                <img class="pPCom" src="Images/PhotoiNSTA.png">
+                <div class="etoileCom">
+                    <p class="comSide">Site pas ouf, mais les dev' sont cool</p>
+                    <p class="etoileC">★ ★ ★ ★ ☆</p>
+                </div>
+            </div>
+
+            <div class="commentaires">
+                <img class="pPCom" src="Images/PhotoiNSTA.png">
+                <div class="etoileCom">
+                    <p class="comSide">Site pas ouf, mais les dev' sont cool</p>
+                    <p class="etoileC">★ ★ ★ ★ ☆</p>
+                </div>
+            </div>
+
+
+        </div>
+        
+        <section class="content">
+            <div class="titleOBP">
+                <h1>Shop</h1>
+                <h3>Filters</h3> 
+                <div class="allVignettes">
+                    <div class="vignette">
+                        <h2>Wild Cap</h2>
+                        <a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/WildCap/product.html"><img class="imgCup" src="Images/Produit/Cap.webp"></a>
+                        <p class="etoileV">★ ★ ★ ★ ☆</p>
+                        <p>For every developer who has never seen the Sun. A nice useful cap ! You have to keep a wild skin.</p>
+                        <div class="bottomV">
+                            <button class="shopIt"><a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/WildCap/product.html">Shop It !</a></button>
+                            <section class="prix">29.99€</section>
+                        </div>
+                    </div>
+                    <div class="vignette">
+                        <h2>Wild Cup, Wild Life</h2>
+                        <a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/WildMug/product.html"><img class="imgCup" src="Images/Produit/TasseBlanche.webp" height="250px" width="250px"></a>
+                        <p class="etoileV">★ ★ ★ ★ ★</p>
+                        <p>The perfect Mug to keep your Wilder's mind on shape. Warning, this mug only accepts good coffee.</p>
+                        <div class="bottomV">
+                            <button class="shopIt"><a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/WildMug/product.html">Shop It !</a></button>
+                            <section class="prix">14,99€</section>
+                        </div>
+                    </div>
+                    <div class="vignette">
+                        <h2>T-shirt Men</h2>
+                        <a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/WildShirt/product.html"><img class="imgCup" src="Images/Produit/t-Shirt.webp" height="250px" width="250px"></a>
+                        <p class="etoileV">★ ★ ★ ★ ☆</p>
+                        <p>Keep your wild style fresh and clean ! Get the most beautiful T-shirt in the wild world. You got it bro !</p>
+                        <div class="bottomV">
+                            <button class="shopIt"><a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/WildShirt/product.html">Shop It !</a></button>
+                            <section class="prix">39,99€</section>
+                        </div>
+                    </div>
+
+
+                    <div class="vignette">
+                        <h2>Wild Banzai</h2>
+                        <a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/BANZAI/product.html"><img class="imgCup" src="Images/Produit/PlanteWild.webp"></a>
+                        <p class="etoileV">★ ★ ★ ★ ☆</p>
+                        <p>Raised and protected by Marylou. It will always be by your side. Feel the WildLove every Day by this Banzai</p>
+                        <div class="bottomV">
+                            <button class="shopIt"><a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/BANZAI/product.html">Shop It !</a></button>
+                            <section class="prix">29,99€</section>
+                        </div>
+                    </div>
+                    <div class="vignette">
+                        <h2>Wild Pen</h2>
+                        <a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/Stylo/product.html"><img class="imgCup" src="Images/Produit/Stylo.webp" height="250px" width="250px"></a>
+                        <p class="etoileV">★ ★ ★ ★ ☆</p>
+                        <p>Sign your best professional contracts with this Wild pen ! This pen only writes good ideas ! </p>
+                        <div class="bottomV">
+                            <button class="shopIt"><a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/Stylo/product.html">Shop It !</a></button>
+                            <section class="prix">9,99€</section>
+                        </div>
+                    </div>
+                    <div class="vignette">
+                        <h2>Wild Thermos</h2>
+                        <a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/Gourde/product.html"><img class="imgCup" src="Images/Produit/Gourde.webp" height="250px" width="250px"></a>
+                        <p class="etoileV">★ ★ ★ ☆ ☆</p>
+                        <p>Pretend you ‘re hydrating with this opaque Flask. And carry your coffee every where in this amazing thermos</p>
+                        <div class="bottomV">
+                            <button class="shopIt"><a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/Gourde/product.html">Shop It !</a></button>
+                            <section class="prix">24,99€</section>
+                        </div>
+                    </div>
+
+                    <div class="vignette">
+                        <h2>Stickers</h2>
+                        <a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/Stickers/product.html"><img class="imgCup" src="Images/Produit/Sticker.webp"></a>
+                        <p class="etoileV">★ ★ ★ ★ ☆</p>
+                        <p>Spread the WildSpirit wherever it pleases you. The best decoration for your laptop. Different Sizes are available</p>
+                        <div class="bottomV">
+                            <button class="shopIt"><a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/Stickers/product.html">Shop It !</a></button>
+                            <section class="prix">7,99€</section>
+                        </div>
+                    </div>
+                    <div class="vignette">
+                        <h2>Basile</h2>
+                        <a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/Bazile/product.html"><img class="imgCup" src="Images/Produit/Basile.webp" height="250px" width="250px"></a>
+                        <p class="etoileV">★ ★ ★ ★ ★</p>
+                        <p>The best JavaScript instructor ! Pro Wow Player ! Sometimes he doesn’t know what to say at the end of the day ! But he is cool !</p>
+                        <div class="bottomV">
+                            <button class="shopIt"><a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/Bazile/product.html">Shop It !</a></button>
+                            <section class="prix">999,99€</section>
+                        </div>
+                    </div>
+                    <div class="vignette">
+                        <h2>Clément</h2>
+                        <a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/Clément/product.html"><img class="imgCup" src="Images/Produit/Clement.webp" height="250px" width="250px"></a>
+                        <p class="etoileV">★ ★ ☆ ☆ ☆</p>
+                        <p>The best PhP instructor. He doesn’t like the pressure and Javascript. But we still love him. even if he makes terrible jokes</p>
+                        <div class="bottomV">
+                            <button class="shopIt"><a href="/Users/thomas/Desktop/TheWildShop/Main/Page Produit/Clément/product.html">Shop It !</a></button>
+                            <section class="prix">2,99€</section>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Store Section -->
+
+                  <!-- Section Footer -->
+                  <section class="SectionFooter">
+
+                    <div class="footerBG">
+            
+                        <div class="List"> 
+            
+                            <div class="footerList">
+                                <h3>Payment</h3>
+                                <a href="https://twitter.com/wildschool_btz?lang=fr" target="_blank" class="icon"><img src="Images/Icon/visa.svg" alt="twitterIcon" ><p>Visa</p></a>
+                                <a href="https://fr.linkedin.com/school/wild-code-school/" target="_blank" class="icon"><img src="Images/Icon/mastercard.svg" alt="linkedinIcon"><p>MasterCard</p></a>
+                                <a href="https://github.com/WildCodeSchool" target="_blank" class="icon"><img src="Images/Icon/paypal.svg" alt="githubIcon"><p>PayPal</p></a>
+                                <a href="https://www.instagram.com/wildcodeschool_biarritz/?hl=fr" target="_blank" class="icon"><img src="Images/Icon/american-express-2.svg" alt="instagramIcon"><p>AExpress</p></a>
+            
+            
+                            </div>
+            
+                            <div class="footerList">
+                                <h3>Follow Us</h3>
+                                <a href="https://twitter.com/wildschool_btz?lang=fr" target="_blank" class="icon"><img src="Images/Icon/twitter.svg" alt="twitterIcon" ><p>twitter</p></a>
+                                <a href="https://fr.linkedin.com/school/wild-code-school/" target="_blank" class="icon"><img src="Images/Icon/linkedin-logo.svg" alt="linkedinIcon"><p>LinkedIn</p></a>
+                                <a href="https://github.com/WildCodeSchool" target="_blank" class="icon"><img src="Images/Icon/github.svg" alt="githubIcon"><p>GitHub</p></a>
+                                <a href="https://www.instagram.com/wildcodeschool_biarritz/?hl=fr" target="_blank" class="icon"><img src="Images/Icon/instagram-2.svg" alt="instagramIcon"><p>Instagram</p></a>
+            
+                            </div>
+            
+                            <div class="footerList">
+                                <h3>Legal Terms</h3>
+                                <div class="list3">
+                                <a href="https://twitter.com/wildschool_btz?lang=fr" target="_blank"><p>Terms and legal Conditions</p></a>
+                                <a href="https://fr.linkedin.com/school/wild-code-school/" target="_blank" ><p>Evaluation System</p></a>
+                                <a href="https://github.com/WildCodeSchool" target="_blank"><p>Private Policy</p></a>
+                                <a href="https://www.instagram.com/wildcodeschool_biarritz/?hl=fr" target="_blank" ><p>Return and refunds</p></a>
+                                </div>
+            
+                            </div>
+                        
+            
+                        </div>
+            
+                        <div class="NewsLetter">
+                                <h2>Our NewsLetter</h2>
+            
+                                    <form class="inputs">
+                                        <input type="text" class="InputMail">
+                                        <button type="submit" class="InputSubscrib">Subscribe</button>
+                                    </form  >
+            
+                                    <div class="Copyright">
+                                        <p>Made by happy Wilders:<br> Joseph /Mathias /Remi /Thomas</p>
+                                        <p class="Cpyrght">@WildCodeSchool</p>
+            
+                                    </div>
+            
+                            </div>
+            
+                        </div>
+            
+            
+                    </div>
+            
+            
+            
+                </section>
+             
+            <!--  End Section Footer -->
+
+
+
+
+    <script src="Store.js"></script>
+</body>
+
+</html>
