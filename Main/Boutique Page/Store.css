@@ -14,6 +14,7 @@ body {
 /*-- Navbar --*/
 
 nav {
+    z-index: 4;
     width: 95%;
     position: fixed;
     padding-left: 2%;
@@ -279,7 +280,7 @@ nav {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url(Images/BackGround/BackGroundV3R.webp);
+    background-image: url(Images/BackGround/BackGroundV8B.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 0.2%;
@@ -601,6 +602,9 @@ nav {
 }
 
 .titleOBP {
+    background-image: url(Images/BackGround/BackGroundV4W.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -960,7 +964,7 @@ nav {
         font-family: 'Varela Round', sans-serif;
     }
     .vignette {
-        width: 80%;
+        width: 70%;
         height: 100%;
         border: 3px solid #EEA19F;
         border-radius: 40px;
@@ -1124,8 +1128,11 @@ nav {
 
 /* -- Footer -- */
 .SectionFooter {
-    margin-top: 5%;
-    margin-bottom: 1%;
+    background-image: url(Images/BackGround/BackGroundF..webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 6%;
+    padding-bottom: 2%;
 }
 
 .footerBG {
@@ -1243,8 +1250,8 @@ line-height: 15px;
 @media screen and (max-width: 900px) {
 
     .SectionFooter {
-        margin-left: 4%;
-        margin-right: 4%;
+        padding-left: 4%;
+        padding-right: 4%;
     }
     .footerBG {
         display: flex;

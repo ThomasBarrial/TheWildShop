@@ -417,7 +417,7 @@ nav {
     background-color: var(--coral);
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 13% 2%;
+    margin: 15% 2%;
     border-radius: 50px;
     padding-bottom: 8%;
 }
@@ -457,7 +457,7 @@ nav {
 @media screen and (min-width: 600px) {
     
     #globalDiv {
-      /*  background: url(/Images/BackGround/Background.webp); */
+        background-image: url(Images/BackGround/BackGroundV4W.webp);
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -541,6 +541,7 @@ nav {
 
 .titleAUP h1 {
     font-size: 80px;
+    margin-left: 8%;
     color: #EEA19F;
     font-family: 'Varela Round', sans-serif;
 }
@@ -974,8 +975,9 @@ nav {
 /* --  End Section Comm&Form -- */
 
 .SectionFooter {
-    margin-top: 5%;
-    margin-bottom: 1%;
+    background-image: url(Images/BackGround/BackGroundF..webp);
+    padding-top: 6%;
+    padding-bottom: 2%;
 }
 
 .footerBG {
@@ -1092,9 +1094,9 @@ line-height: 15px;
 @media screen and (max-width: 900px) {
 
     .SectionFooter {
-        margin-left: 4%;
-        margin-right: 4%;
-        margin-bottom: 15%;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 20%;
     }
     .footerBG {
         height: 100%;

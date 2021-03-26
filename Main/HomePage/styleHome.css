@@ -281,7 +281,7 @@ nav {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url(Images/BackGround/BackGroundV3R.webp);
+    background-image: url(Images/BackGround/BackGroundV6B.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 0.2%;
@@ -291,7 +291,7 @@ nav {
     font-family: 'Varela Round', sans-serif;
     font-size: 80px;
     font-weight: normal;
-    color: #FFF;
+    color: #EEA19F;
     width: 40%;
     margin: 0;
     margin-top: 6%;
@@ -310,7 +310,7 @@ nav {
 .subTitle {
     font-family: 'Varela Round', sans-serif;
     font-size: 40px;
-    color: #FFF;
+    color: #EEA19F;
     width: 40%;
     margin: 0;
     margin-top: 2%;
@@ -319,7 +319,7 @@ nav {
 }
 
 #headerIcons {
-    margin-top: 8%;
+    margin-top: 10%;
     margin-right: 5%;
     padding-bottom: 5%;
     display: flex;
@@ -330,13 +330,13 @@ nav {
 }
 
 #goshopButton:hover {
-    background-color: var(--coral);
-    color: #FFF;
+    color: #ECA19F;
+    background-color: white;
 }
 
 #goshopButton {
-    color: #ECA19F;
-    background-color: white;
+    color: white;
+    background-color: #ECA19F;
     border-radius: 25px;
     padding: 0.625rem 3.125rem;
     font-size: 20px;    
@@ -353,7 +353,7 @@ nav {
 
 #goshopButton:hover a {
     text-decoration: none;
-    color: #FFF;
+    color: #ECA19F;;
 }
 
 #headerIcons a{
@@ -397,7 +397,7 @@ nav {
 
 
     #headerIcons {
-        margin-top: 35%;
+        margin-top: 30%;
         margin-left: 8%;
         padding: 0;
         display: flex;
@@ -432,10 +432,10 @@ nav {
 
 
 .titleOBP {
+    background-color: #EEA19F;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10%
 }
 
 .allVignettes {
@@ -456,7 +456,7 @@ nav {
 
 .titleOBP h1 {
     font-size: 80px;
-    color: #EEA19F;
+    color: white;
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -601,8 +601,11 @@ nav {
 
 /* -- Footer -- */
 .SectionFooter {
-    margin-top: 5%;
-    margin-bottom: 1%;
+    background-image: url(Images/BackGround/BackGroundV5RB.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 6%;
+    padding-bottom: 2%;
 }
 
 .footerBG {
@@ -718,8 +721,8 @@ line-height: 15px;
 @media screen and (max-width: 900px) {
 
     .SectionFooter {
-        margin-left: 4%;
-        margin-right: 4%;
+        padding-left: 4%;
+        padding-right: 4%;
     }
     .footerBG {
         display: flex;
