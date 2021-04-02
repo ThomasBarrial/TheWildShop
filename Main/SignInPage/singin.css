@@ -212,7 +212,7 @@ nav {
         z-index: 2;
         height: 95%;
         width: 85%;
-        padding: 2% 10d%;
+        padding: 2% 10%;
         padding-left: 1%;
         padding-right: 1%;
         background-color: #EEA19F;
@@ -427,7 +427,7 @@ nav {
       border-radius: 50px;
       font-family: 'Raleway', sans-serif;
       color: #FFF;
-      background-image: url(PATTERN_Plan de travail 1.png);
+      /* background-image: url(PATTERN_Plan de travail 1.png); */
       background-size: 400%;
     }
 
@@ -512,7 +512,7 @@ nav {
   }
 }
 
-* -- Footer -- */
+/* -- Footer -- */
 .SectionFooter {
     margin-top: 5%;
     margin-bottom: 1%;
