@@ -49,7 +49,7 @@ const navSlide = () => {
     else if(search === "Basile" || search === "The pro player" || search === "The best quality" || search === "The best of the BEST"){
         window.open("/Users/thomas/Desktop/TheWildShop/Main/Page Produit/Bazile/product.html","_self");
     }
-    else if(search === "Clément" || search === "The beginner"){
+    else if(search === "Clément" || search === "Clément"){
         window.open("/Users/thomas/Desktop/TheWildShop/Main/Page Produit/Clément/product.html","_self");
     }
     else if(search === "sticker" || search === "Stickers" || search === "Sticker" || search === "stickers"){
